@@ -12,6 +12,21 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">
+			// Function to prompt for password
+			function passwordProtect() {
+				var password = prompt("Please enter the password to access this page:");
+				// Check if the entered password matches the predefined password
+				if (password !== "SkyJustice2024") {
+					// Redirect to an error page or show an alert if the password is incorrect
+					alert("Incorrect password. You will be redirected.");
+					window.location.href = "error.html"; // Redirect to another page (optional)
+				}
+			}
+
+			// Call the function when the page loads
+			window.onload = passwordProtect;
+		</script>
 	</head>
 	<body class="is-preload">
 
